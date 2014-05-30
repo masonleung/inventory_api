@@ -1,0 +1,13 @@
+defaults: &defaults
+  adapter: mysql
+  database: inventory
+  username: inventory_user
+  password: inventory_pass
+  host: localhost
+  port: 3306
+ 
+development:
+  <<: *defaults
+  
+production:
+  <<: *defaults
